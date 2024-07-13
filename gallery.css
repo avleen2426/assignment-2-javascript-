@@ -1,0 +1,39 @@
+/*CSS for the gallery page*/
+/* Style for the figure element containing the main image and caption */
+#gallery-figure {
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Style for the list of thumbnail images */
+#gallery-thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style for each thumbnail item */
+#gallery-thumbnails li {
+  margin: 10px;
+}
+
+/* Style for the active thumbnail */
+#gallery-thumbnails li.active {
+  border: 2px solid #ccc;
+}
+
+/* Style for the main image, including transition for opacity */
+#gallery-image {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Class added to the main image when it is fully loaded */
+#gallery-image.loaded {
+  opacity: 1;
+}
+
